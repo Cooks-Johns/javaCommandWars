@@ -1,6 +1,4 @@
 import java.util.*;
-
-
 public class dice {
 
     public int roll6(){
@@ -11,7 +9,6 @@ public class dice {
         }//1-6
         return n;
     }
-
     public int roll10(){
         Random rand = new Random();
         int n = rand.nextInt(11);
@@ -20,7 +17,6 @@ public class dice {
         }
         return n;
     }//1-10
-
     public int roll20(){
         Random rand = new Random();
         int n = rand.nextInt(21);
