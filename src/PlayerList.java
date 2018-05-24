@@ -6,6 +6,10 @@ public class PlayerList {
 
     static Scanner scan = new Scanner(System.in);
     static Random rand = new Random();
+    static ConsoleColors blue = new ConsoleColors();
+    static ConsoleColors yellow = new ConsoleColors();
+    static ConsoleColors red = new ConsoleColors();
+
 
     //---- PLAYER TRAITS
 
@@ -719,17 +723,23 @@ public class PlayerList {
         String charclass;
         int num = 2;
         while (num > 1) {
-            System.out.println("Enter your Name: ");
+            System.out.println("     *************** \n" +
+                               "    * Enter your Name * \n %s" +
+                               " \n" +
+                               "     ****************" );
             playerName = scan.nextLine();
             System.out.println("Choose your class: ");
-            System.out.println("'n' for Nomad"+ "\n" +
-                    "So at this point " + "\n" + "<------------------------> ");
-            System.out.println("'a' for Alchemist" + "\n" +
+            System.out.println(ConsoleColors.WHITE_BOLD  + "'n' for Nomad"+ "\n" +
+                    "So at this point " + "\n" + "<------------------------> " +
+                    ConsoleColors.RESET);
+            System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT+ "'a' for Alchemist" + "\n" +
                     "The elixer is the the real gold,\n" +
-                    "but gold is gold." + "\n" + "<------------------------> ");
-            System.out.println("'b' for Berserker" + "\n" +
+                    "but gold is gold." + "\n" + "<------------------------> " +
+                    ConsoleColors.RESET);
+            System.out.println(ConsoleColors.RED_BOLD + "'b' for Berserker" + "\n" +
                     "So this might be a good time to run....\n " +
-                    "but if I it's already to late." + "\n" + "<------------------------> ");
+                    "but if I it's already to late." + "\n" + "<------------------------> " +
+                    ConsoleColors.RESET);
             charclass = scan.nextLine().toLowerCase();
 
             if (charclass.charAt(0) == 'n') {
@@ -746,6 +756,7 @@ public class PlayerList {
 
         }
     }
+
 }
 
 
