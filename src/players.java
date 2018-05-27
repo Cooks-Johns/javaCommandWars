@@ -17,6 +17,11 @@ public class players {
     static PlayerList alchmist = new PlayerList();
     static PlayerList berserker = new PlayerList();
 
+    public static void main(String [] args) {
+
+
+    }
+
 
 
 
