@@ -723,14 +723,14 @@ public class PlayerList {
         String charclass;
         int num = 2;
         while (num > 1) {
-            System.out.println("     *************** \n" +
-                               "    * Enter your Name * \n %s" +
-                               " \n" +
-                               "     ****************" );
+            System.out.println("              <--------------->" + "\n" +
+                               "            > Enter your Name, and press" +
+                               "               to start your quest < " + " \n" +
+                               "              <----------------> " );
             playerName = scan.nextLine();
-            System.out.println("Choose your class: ");
-            System.out.println(ConsoleColors.WHITE_BOLD  + "'n' for Nomad"+ "\n" +
-                    "So at this point " + "\n" + "<------------------------> " +
+            System.out.println("Hello," + playerName + " Choose your class: ");
+            System.out.println(ConsoleColors.WHITE_BOLD  + "'n'--> for Nomad"+ "\n" +
+                    "So " + "\n" + "<------------------------> " +
                     ConsoleColors.RESET);
             System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT+ "'a' for Alchemist" + "\n" +
                     "The elixer is the the real gold,\n" +

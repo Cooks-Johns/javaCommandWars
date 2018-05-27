@@ -13,6 +13,8 @@ public class Log {
     public static final String ANSI_WHITE = "\u001B[37m";
     private static final String TAG = " New";
 
+
+
     //info
     public static void i(String className, String message) {
         System.out.println(ANSI_GREEN + className + " : " + message + ANSI_RESET);
@@ -33,14 +35,25 @@ public class Log {
         System.out.println(ANSI_YELLOW + className + " : " + message + ANSI_RESET);
     }
 
+    public static void loop(){
+        int i =  1;
+        while (i <= 10) {
+            System.out.println("john");
+            i++;
+        }
+        return;
+    }
+
     public static void main(String[] args) {
 
-        Log.i(TAG,"This is an info message");
+        loop();
 
         Log.e(TAG,"This is an error message");
 
         Log.w(TAG,"This is a warning message");
 
         Log.d(TAG,"This is a debug message");
+
+
     }
 }

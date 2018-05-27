@@ -1,5 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Scanner;
+import java.util.*;
 
 public class players {
 
@@ -11,6 +13,9 @@ public class players {
     static ConsoleColors yellow = new ConsoleColors();
     static ConsoleColors green = new ConsoleColors();
     static ConsoleColors white = new ConsoleColors();
+    static PlayerList nomad = new PlayerList();
+    static PlayerList alchmist = new PlayerList();
+    static PlayerList berserker = new PlayerList();
 
 
 
