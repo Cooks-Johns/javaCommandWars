@@ -276,127 +276,127 @@ public class PlayerList {
         PlayerList.mountAbility = mountAbility;
     }
 
-    public static String getEnemyName() {
-        return enemyName;
-    }
-
-    public static void setEnemyName(String enemyName) {
-        PlayerList.enemyName = enemyName;
-    }
-
-    public static int getEnemyHp() {
-        return enemyHp;
-    }
-
-    public static void setEnemyHp(int enemyHp) {
-        PlayerList.enemyHp = enemyHp;
-    }
-
-    public static int getEnemyMaxHp() {
-        return enemyMaxHp;
-    }
-
-    public static void setEnemyMaxHp(int enemyMaxHp) {
-        PlayerList.enemyMaxHp = enemyMaxHp;
-    }
-
-    public static int getEnemyMana() {
-        return enemyMana;
-    }
-
-    public static void setEnemyMana(int enemyMana) {
-        PlayerList.enemyMana = enemyMana;
-    }
-
-    public static int getEnemyMaxMana() {
-        return enemyMaxMana;
-    }
-
-    public static void setEnemyMaxMana(int enemyMaxMana) {
-        PlayerList.enemyMaxMana = enemyMaxMana;
-    }
-
-    public static int getEnemyMeleeDmg() {
-        return enemyMeleeDmg;
-    }
-
-    public static void setEnemyMeleeDmg(int enemyMeleeDmg) {
-        PlayerList.enemyMeleeDmg = enemyMeleeDmg;
-    }
-
-    public static int getEnemyMaxMeleeDmg() {
-        return enemyMaxMeleeDmg;
-    }
-
-    public static void setEnemyMaxMeleeDmg(int enemyMaxMeleeDmg) {
-        PlayerList.enemyMaxMeleeDmg = enemyMaxMeleeDmg;
-    }
-
-    public static String getBossName() {
-        return BossName;
-    }
-
-    public static void setBossName(String bossName) {
-        BossName = bossName;
-    }
-
-    public static int getBossHp() {
-        return BossHp;
-    }
-
-    public static void setBossHp(int bossHp) {
-        BossHp = bossHp;
-    }
-
-    public static int getBossMaxHp() {
-        return BossMaxHp;
-    }
-
-    public static void setBossMaxHp(int bossMaxHp) {
-        BossMaxHp = bossMaxHp;
-    }
-
-    public static int getBossMana() {
-        return BossMana;
-    }
-
-    public static void setBossMana(int bossMana) {
-        BossMana = bossMana;
-    }
-
-    public static int getBossMaxMana() {
-        return BossMaxMana;
-    }
-
-    public static void setBossMaxMana(int bossMaxMana) {
-        BossMaxMana = bossMaxMana;
-    }
-
-    public static int getBossMeleeDmg() {
-        return BossMeleeDmg;
-    }
-
-    public static void setBossMeleeDmg(int bossMeleeDmg) {
-        BossMeleeDmg = bossMeleeDmg;
-    }
-
-    public static int getBossMaxMeleeDmg() {
-        return BossMaxMeleeDmg;
-    }
-
-    public static void setBossMaxMeleeDmg(int bossMaxMeleeDmg) {
-        BossMaxMeleeDmg = bossMaxMeleeDmg;
-    }
-
-    public static int getBossAbility() {
-        return BossAbility;
-    }
-
-    public static void setBossAbility(int bossAbility) {
-        BossAbility = bossAbility;
-    }
-
-
+//    public static String getEnemyName() {
+//        return enemyName;
+//    }
+//
+//    public static void setEnemyName(String enemyName) {
+//        PlayerList.enemyName = enemyName;
+//    }
+//
+//    public static int getEnemyHp() {
+//        return enemyHp;
+//    }
+//
+//    public static void setEnemyHp(int enemyHp) {
+//        PlayerList.enemyHp = enemyHp;
+//    }
+//
+//    public static int getEnemyMaxHp() {
+//        return enemyMaxHp;
+//    }
+//
+//    public static void setEnemyMaxHp(int enemyMaxHp) {
+//        PlayerList.enemyMaxHp = enemyMaxHp;
+//    }
+//
+//    public static int getEnemyMana() {
+//        return enemyMana;
+//    }
+//
+//    public static void setEnemyMana(int enemyMana) {
+//        PlayerList.enemyMana = enemyMana;
+//    }
+//
+//    public static int getEnemyMaxMana() {
+//        return enemyMaxMana;
+//    }
+//
+//    public static void setEnemyMaxMana(int enemyMaxMana) {
+//        PlayerList.enemyMaxMana = enemyMaxMana;
+//    }
+//
+//    public static int getEnemyMeleeDmg() {
+//        return enemyMeleeDmg;
+//    }
+//
+//    public static void setEnemyMeleeDmg(int enemyMeleeDmg) {
+//        PlayerList.enemyMeleeDmg = enemyMeleeDmg;
+//    }
+//
+//    public static int getEnemyMaxMeleeDmg() {
+//        return enemyMaxMeleeDmg;
+//    }
+//
+//    public static void setEnemyMaxMeleeDmg(int enemyMaxMeleeDmg) {
+//        PlayerList.enemyMaxMeleeDmg = enemyMaxMeleeDmg;
+//    }
+//
+//    public static String getBossName() {
+//        return BossName;
+//    }
+//
+//    public static void setBossName(String bossName) {
+//        BossName = bossName;
+//    }
+//
+//    public static int getBossHp() {
+//        return BossHp;
+//    }
+//
+//    public static void setBossHp(int bossHp) {
+//        BossHp = bossHp;
+//    }
+//
+//    public static int getBossMaxHp() {
+//        return BossMaxHp;
+//    }
+//
+//    public static void setBossMaxHp(int bossMaxHp) {
+//        BossMaxHp = bossMaxHp;
+//    }
+//
+//    public static int getBossMana() {
+//        return BossMana;
+//    }
+//
+//    public static void setBossMana(int bossMana) {
+//        BossMana = bossMana;
+//    }
+//
+//    public static int getBossMaxMana() {
+//        return BossMaxMana;
+//    }
+//
+//    public static void setBossMaxMana(int bossMaxMana) {
+//        BossMaxMana = bossMaxMana;
+//    }
+//
+//    public static int getBossMeleeDmg() {
+//        return BossMeleeDmg;
+//    }
+//
+//    public static void setBossMeleeDmg(int bossMeleeDmg) {
+//        BossMeleeDmg = bossMeleeDmg;
+//    }
+//
+//    public static int getBossMaxMeleeDmg() {
+//        return BossMaxMeleeDmg;
+//    }
+//
+//    public static void setBossMaxMeleeDmg(int bossMaxMeleeDmg) {
+//        BossMaxMeleeDmg = bossMaxMeleeDmg;
+//    }
+//
+//    public static int getBossAbility() {
+//        return BossAbility;
+//    }
+//
+//    public static void setBossAbility(int bossAbility) {
+//        BossAbility = bossAbility;
+//    }
+//
+//
 
 
     public static String playerName;
@@ -429,6 +429,11 @@ public class PlayerList {
     //----------------          COMPANIONS
 
     public static String compaionName;
+
+    public PlayerList() {
+
+
+    }
 
     public static int companionHp;
     public static int companionMaxHp;
@@ -486,16 +491,6 @@ public class PlayerList {
     public static int BossMaxMeleeDmg;
 
     public static int BossAbility;
-
-
-    //----------        ITEMS
-    //
-
-
-
-
-
-
 
 
 
@@ -617,43 +612,43 @@ public class PlayerList {
 
 
     // ----------  NPC
-
-    private static void enemy1(){
-
-         enemyName = " ";
-
-         enemyHp = 10;
-         enemyMaxHp = 23 ;
-
-         enemyMana = 42;
-         enemyMaxMana = 443;
-
-         enemyMeleeDmg = 43;
-         enemyMaxMeleeDmg = 24;
-
-//         enemyAbility;
-
-
-    }
 //
+//    private static void enemy1(){
+//
+//         enemyName = " ";
+//
+//         enemyHp = 10;
+//         enemyMaxHp = 23 ;
+//
+//         enemyMana = 42;
+//         enemyMaxMana = 443;
+//
+//         enemyMeleeDmg = 43;
+//         enemyMaxMeleeDmg = 24;
+//
+////         enemyAbility;
+//
+//
+//    }
+////
 //    // -----------  BOSS'S
-
-    public static void boss1(){
-
-     BossName = "boss1";
-
-     BossHp = 100;
-     BossMaxHp = 1000000000;
-
-     BossMana = 23;
-     BossMaxMana = 1000000000;
-
-     BossMeleeDmg = 47;
-     BossMaxMeleeDmg = 50009000;
-
-//     BossAbility = ;
-
-}
+//
+//    public static void boss1(){
+//
+//     BossName = "boss1";
+//
+//     BossHp = 100;
+//     BossMaxHp = 1000000000;
+//
+//     BossMana = 23;
+//     BossMaxMana = 1000000000;
+//
+//     BossMeleeDmg = 47;
+//     BossMaxMeleeDmg = 50009000;
+//
+////     BossAbility = ;
+//
+//}
 
     //----------------          COMPANIONS
 
@@ -689,34 +684,34 @@ public class PlayerList {
          mountAbility = 4;
 }
 
-    // this is going to use the players level to adjust the enemy level
-    // in the future it will be based off the level or progression
-
-
-    private static void buildEnemy() {
-        switch (level) {
-            case 1:
-                int enemyHp = 9;
-                enemyMeleeDmg = 1;
-                break;
-            case 2:
-                enemyHp = 19;
-                enemyMeleeDmg = 4;
-                break;
-            case 3:
-                enemyHp = 24;
-                enemyMeleeDmg = 6;
-                break;
-            case 4:
-                enemyHp = 32;
-                enemyMeleeDmg = 7;
-                break;
-            case 5:
-                enemyHp = 40;
-                enemyMeleeDmg = 9;
-                break;
-        }
-    }
+//    // this is going to use the players level to adjust the enemy level
+//    // in the future it will be based off the level or progression
+//
+//
+//    private static void buildEnemy() {
+//        switch (level) {
+//            case 1:
+//                int enemyHp = 9;
+//                enemyMeleeDmg = 1;
+//                break;
+//            case 2:
+//                enemyHp = 19;
+//                enemyMeleeDmg = 4;
+//                break;
+//            case 3:
+//                enemyHp = 24;
+//                enemyMeleeDmg = 6;
+//                break;
+//            case 4:
+//                enemyHp = 32;
+//                enemyMeleeDmg = 7;
+//                break;
+//            case 5:
+//                enemyHp = 40;
+//                enemyMeleeDmg = 9;
+//                break;
+//        }
+//    }
 
 
     public static void main(String[] args) {
