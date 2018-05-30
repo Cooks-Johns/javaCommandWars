@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.zip.CheckedOutputStream;
 
 public class Menu {
 
@@ -17,9 +18,11 @@ public class Menu {
                     "              > to start your quest < " + " \n" +
                     "           <--------------------------->                                                     " + ConsoleColors.RESET);
             String playerName = scan.nextLine();
-            System.out.println("Hello," + playerName + " Choose your class: ");
-            System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
-                    "So " + "\n" + "<------------------------> " +
+            System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT + "Hello," +
+                    ConsoleColors.WHITE_UNDERLINED + playerName +
+                    ConsoleColors.PURPLE_BOLD_BRIGHT + " Choose your class: " + ConsoleColors.RESET);
+            System.out.println(ConsoleColors.GREEN_BRIGHT + "'n'--> for Nomad" + "\n" +
+                    "So they are the people who are said to never die " + "\n" + "<------------------------> " +
                     ConsoleColors.RESET);
             System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT + "'a' for Alchemist" + "\n" +
                     "The elixer is the the real gold,\n" +
