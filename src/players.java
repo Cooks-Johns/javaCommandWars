@@ -81,7 +81,7 @@ public class players {
 
 // ---------------      THE KEYS TO THIS BUS
 
-    private static void printStats() {
+    public static void printStats() {
         if (charclass.equals("Alchemist")) {
             System.out.println(playerName + "\nhp: " + hp +
                     "\nmana: " + mana + "\ndamage: " +
@@ -96,7 +96,7 @@ public class players {
 
 //--      PC  ADD A FEW MORE CLASSESS
 
-    private static void pathOfTheNomad() {
+    public static void pathOfTheNomad() {
         charclass = "Nomad";
         hp = 20;
         maxHp = 2000;
@@ -120,7 +120,7 @@ public class players {
         level = 1;
     }
 
-    private static void pathOfTheAlchemist() {
+    protected static void pathOfTheAlchemist() {
         charclass = "Alchemist";
         hp = 20;
         maxHp = 2000;
@@ -143,7 +143,7 @@ public class players {
         level = 1;
     }
 
-    private static void pathOfTheBerserker() {
+    public static void pathOfTheBerserker() {
         charclass = "Berserker";
         hp = 20;
         maxHp = 2000;
