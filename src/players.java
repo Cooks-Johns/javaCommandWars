@@ -6,16 +6,6 @@ public class players {
 
 
     static Scanner scan = new Scanner(System.in);
-    static Random rand = new Random();
-    static ConsoleColors blue = new ConsoleColors();
-    static ConsoleColors red = new ConsoleColors();
-    static ConsoleColors yellow = new ConsoleColors();
-    static ConsoleColors green = new ConsoleColors();
-    static ConsoleColors white = new ConsoleColors();
-    static PlayerList nomad = new PlayerList();
-    static PlayerList alchmist = new PlayerList();
-    static PlayerList berserker = new PlayerList();
-
 
     public players(
             String playerName, String charclass,
@@ -129,9 +119,9 @@ public class players {
         maxArmor = 1000;
 
         meleeDmg = 4;
-        maxMeleeDmg =
+        maxMeleeDmg = 34;
 
-                speed = 12;
+        speed = 12;
         maxSpeed = 25;
 
         mana = 15;
@@ -144,7 +134,7 @@ public class players {
     }
 
     public static void pathOfTheBerserker() {
-        charclass = "Berserker";
+        charclass = ConsoleColors.RED_BOLD + "Berserker";
         hp = 20;
         maxHp = 2000;
 
@@ -152,9 +142,9 @@ public class players {
         maxArmor = 1000;
 
         meleeDmg = 4;
-        maxMeleeDmg =
+        maxMeleeDmg = 42;
 
-                speed = 12;
+        speed = 12;
         maxSpeed = 25;
 
         mana = 15;

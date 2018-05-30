@@ -182,49 +182,51 @@ public class driver {
         }
     }
 
-    private static void checkLevelUp() {
-        if(xp >= 100 && Level == 4){
+    public static void checkLevelUp() {
+        if(xp >= 100 && Level == 4) {
             System.out.println("Level 5!");
             Level = Level + 1;
             maxhp = maxhp + 25;
             playerhp = maxhp;
-            if(charclass.equals("mage")){
+            if(charclass.equals("mage")) {
                 maxmana = maxmana + 7;
                 mana = maxmana;
             }
             playermeleedmg = playermeleedmg + 3;
             printStats();
-        }else
-        if(xp >= 50 && Level == 3){
+        } else if(xp >= 50 && Level == 3) {
             System.out.println("Level 4!");
             Level = Level + 1;
             maxhp = maxhp + 20;
             playerhp = maxhp;
-            if(charclass.equals("mage")){
+
+            if(charclass.equals("mage")) {
                 maxmana = maxmana + 7;
                 mana = maxmana;
             }
+
             playermeleedmg = playermeleedmg + 2;
             printStats();
-        }else
-        if(xp >= 25 && Level == 2){
+
+        } else if(xp >= 25 && Level == 2) {
             System.out.println("Level 3!");
             Level = Level + 1;
             maxhp = maxhp + 10;
             playerhp = maxhp;
-            if(charclass.equals("mage")){
+            if(charclass.equals("mage")) {
                 maxmana = maxmana + 7;
                 mana = maxmana;
             }
             playermeleedmg = playermeleedmg + 2;
             printStats();
-        }else
-        if(xp >= 10 && Level == 1){
+
+        } else if(xp >= 10 && Level == 1) {
             System.out.println("Level 2!");
             Level = Level + 1;
             maxhp = maxhp + 5;
             playerhp = maxhp;
-            if(charclass.equals("mage")){
+
+            if(charclass.equals("mage")) {
                 maxmana = maxmana + 7;
                 mana = maxmana;
             }
@@ -233,7 +235,7 @@ public class driver {
         }//increments player level and adds to stats with xp
 
     }
-    private static void enemyattack() {
+    public static void enemyattack() {
         if(die.roll6() > 2){
             System.out.println("Enemy hits!");
             playerhp = playerhp - enemymeleedmg;
@@ -245,7 +247,7 @@ public class driver {
             System.out.println("Enemy Misses!");
         }
     }
-    private static boolean attack() {
+    public static boolean attack() {
         if(die.roll6() > 2){
             System.out.println("You hit!");
             enemyhp = enemyhp - playermeleedmg;
@@ -259,7 +261,7 @@ public class driver {
         return true;
     }
 
-    private static void gameover() {
+    public static void gameover() {
         System.out.println(playerName + " Died!") ;
         System.out.println("GAME OVER!");
         System.exit(0); //terminates if lost

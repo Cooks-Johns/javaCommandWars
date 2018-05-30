@@ -12,10 +12,10 @@ public class Menu {
         String charclass;
         int num = 2;
         while (num > 1) {
-            System.out.println("              <--------------->" + "\n" +
-                    "            > Enter your Name, and press" +
-                    "               to start your quest < " + " \n" +
-                    "              <----------------> ");
+            System.out.println(ConsoleColors.BLACK_BOLD + "                 <--------------->" + "\n" +
+                    "        > Enter your Name, and press return <" + "\n" +
+                    "              > to start your quest < " + " \n" +
+                    "           <--------------------------->                                                     " + ConsoleColors.RESET);
             String playerName = scan.nextLine();
             System.out.println("Hello," + playerName + " Choose your class: ");
             System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
@@ -44,5 +44,6 @@ public class Menu {
 
 
         }
+
     }
 }

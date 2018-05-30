@@ -8,6 +8,8 @@ public class Enemy {
 
     //--------      ENEMY
 
+    public static int level;
+
     public static String Name;
 
     public static int Hp;
@@ -83,30 +85,30 @@ public class Enemy {
 
 
 
-//    private static void buildEnemy() {
-//        switch (level) {
-//            case 1:
-//                int Hp = 9;
-//                meleeDmg = 1;
-//                break;
-//            case 2:
-//                Hp = 19;
-//                meleeDmg = 4;
-//                break;
-//            case 3:
-//                Hp = 24;
-//                meleeDmg = 6;
-//                break;
-//            case 4:
-//                Hp = 32;
-//                meleeDmg = 7;
-//                break;
-//            case 5:
-//                Hp = 40;
-//                meleeDmg = 9;
-//                break;
-//        }
-//    }
+    private static void buildEnemy() {
+        switch (level) {
+            case 1:
+                int Hp = 9;
+                meleeDmg = 1;
+                break;
+            case 2:
+                Hp = 19;
+                meleeDmg = 4;
+                break;
+            case 3:
+                Hp = 24;
+                meleeDmg = 6;
+                break;
+            case 4:
+                Hp = 32;
+                meleeDmg = 7;
+                break;
+            case 5:
+                Hp = 40;
+                meleeDmg = 9;
+                break;
+        }
+    }
 
 
 }

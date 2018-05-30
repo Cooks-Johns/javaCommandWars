@@ -1,7 +1,7 @@
 import java.util.*;
 public class dice {
 
-    public int roll6(){
+    public static int roll6(){
         Random rand = new Random();
         int n = rand.nextInt(7);
         while(n == 0){
@@ -9,7 +9,7 @@ public class dice {
         }//1-6
         return n;
     }
-    public int roll10(){
+    public static int roll10(){
         Random rand = new Random();
         int n = rand.nextInt(11);
         while(n == 0){
@@ -17,7 +17,7 @@ public class dice {
         }
         return n;
     }//1-10
-    public int roll20(){
+    public static int roll20(){
         Random rand = new Random();
         int n = rand.nextInt(21);
         while(n == 0){
