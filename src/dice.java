@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.Random;
+
 public class dice {
 
     public static int roll6(){
@@ -24,6 +26,28 @@ public class dice {
             n = rand.nextInt(21);
         }//1-20
         return n;
+    }
+
+    public dice(Integer now) {
+
+//        int x = 2; // wait 2 seconds at most
+//
+//        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+//        long startTime = System.currentTimeMillis();
+//        while ((System.currentTimeMillis() - startTime) < x * 1000
+//                && !in.ready()) {
+//        }
+//
+//        if (in.ready()) {
+//            System.out.println("You entered: " + in.readLine());
+//        } else {
+//            System.out.println("You did not enter data");
+//        }
+//
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(Random.Int());
     }
 
 }

@@ -3,20 +3,21 @@ import java.util.Scanner;
 public class players {
 
 
+    public static Object menu;
     static Scanner scan = new Scanner(System.in);
 
-    public players(
-            String playerName, String charclass,
-            int hp, int maxHp,
-            double armor, double maxArmor,
-            int mana, int maxMana,
-            int meleeDmg, int maxMeleeDmg,
-            int speed, int maxSpeed,
-            int luck, int maxLuck,
-            int classAbility, int xp,
-            int level, int maxLevel) {
+    public players(Object menu,
+                   String playerName, String charclass,
+                   int hp, int maxHp,
+                   double armor, double maxArmor,
+                   int mana, int maxMana,
+                   int meleeDmg, int maxMeleeDmg,
+                   int speed, int maxSpeed,
+                   int luck, int maxLuck,
+                   int classAbility, int xp,
+                   int level, int maxLevel) {
 
-
+        this.menu = menu;
         this.playerName = playerName;
         this.charclass = charclass;
         this.hp = hp;
@@ -178,7 +179,168 @@ public class players {
     }
 
 
-    public static void main(String[] args) {
+    public static Object getMenu() {
+        return menu;
+    }
+
+    public static void setMenu(Object menu) {
+        players.menu = menu;
+    }
+
+    public static Scanner getScan() {
+        return scan;
+    }
+
+    public static void setScan(Scanner scan) {
+        players.scan = scan;
+    }
+
+    public static String getPlayerName() {
+        return playerName;
+    }
+
+    public static void setPlayerName(String playerName) {
+        players.playerName = playerName;
+    }
+
+    public static String getCharclass() {
+        return charclass;
+    }
+
+    public static void setCharclass(String charclass) {
+        players.charclass = charclass;
+    }
+
+    public static int getHp() {
+        return hp;
+    }
+
+    public static void setHp(int hp) {
+        players.hp = hp;
+    }
+
+    public static int getMaxHp() {
+        return maxHp;
+    }
+
+    public static void setMaxHp(int maxHp) {
+        players.maxHp = maxHp;
+    }
+
+    public static double getArmor() {
+        return armor;
+    }
+
+    public static void setArmor(double armor) {
+        players.armor = armor;
+    }
+
+    public static double getMaxArmor() {
+        return maxArmor;
+    }
+
+    public static void setMaxArmor(double maxArmor) {
+        players.maxArmor = maxArmor;
+    }
+
+    public static int getMana() {
+        return mana;
+    }
+
+    public static void setMana(int mana) {
+        players.mana = mana;
+    }
+
+    public static int getMaxMana() {
+        return maxMana;
+    }
+
+    public static void setMaxMana(int maxMana) {
+        players.maxMana = maxMana;
+    }
+
+    public static int getMeleeDmg() {
+        return meleeDmg;
+    }
+
+    public static void setMeleeDmg(int meleeDmg) {
+        players.meleeDmg = meleeDmg;
+    }
+
+    public static int getMaxMeleeDmg() {
+        return maxMeleeDmg;
+    }
+
+    public static void setMaxMeleeDmg(int maxMeleeDmg) {
+        players.maxMeleeDmg = maxMeleeDmg;
+    }
+
+    public static int getSpeed() {
+        return speed;
+    }
+
+    public static void setSpeed(int speed) {
+        players.speed = speed;
+    }
+
+    public static int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public static void setMaxSpeed(int maxSpeed) {
+        players.maxSpeed = maxSpeed;
+    }
+
+    public static int getLuck() {
+        return luck;
+    }
+
+    public static void setLuck(int luck) {
+        players.luck = luck;
+    }
+
+    public static int getMaxLuck() {
+        return maxLuck;
+    }
+
+    public static void setMaxLuck(int maxLuck) {
+        players.maxLuck = maxLuck;
+    }
+
+    public static int getClassAbility() {
+        return classAbility;
+    }
+
+    public static void setClassAbility(int classAbility) {
+        players.classAbility = classAbility;
+    }
+
+    public static int getLevel() {
+        return level;
+    }
+
+    public static void setLevel(int level) {
+        players.level = level;
+    }
+
+    public static int getMaxLevel() {
+        return maxLevel;
+    }
+
+    public static void setMaxLevel(int maxLevel) {
+        players.maxLevel = maxLevel;
+    }
+
+    public static int getXp() {
+        return xp;
+    }
+
+    public static void setXp(int xp) {
+        players.xp = xp;
+    }
+
+
+    public static void main() {
 
         String charclass;
         int num = 2;
@@ -218,4 +380,6 @@ public class players {
 
 
     }
+
+
 }
