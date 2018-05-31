@@ -684,7 +684,7 @@ public class PlayerList {
          mountAbility = 4;
 }
 
-//    // this is going to use the players level to adjust the enemy level
+//    // this is going to use the Players level to adjust the enemy level
 //    // in the future it will be based off the level or progression
 //
 //

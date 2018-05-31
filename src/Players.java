@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class players {
+public class Players {
 
 
     public static Object menu;
     static Scanner scan = new Scanner(System.in);
 
-    public players(Object menu,
+    public Players(Object menu,
                    String playerName, String charclass,
                    int hp, int maxHp,
                    double armor, double maxArmor,
@@ -184,7 +184,7 @@ public class players {
     }
 
     public static void setMenu(Object menu) {
-        players.menu = menu;
+        Players.menu = menu;
     }
 
     public static Scanner getScan() {
@@ -192,7 +192,7 @@ public class players {
     }
 
     public static void setScan(Scanner scan) {
-        players.scan = scan;
+        Players.scan = scan;
     }
 
     public static String getPlayerName() {
@@ -200,7 +200,7 @@ public class players {
     }
 
     public static void setPlayerName(String playerName) {
-        players.playerName = playerName;
+        Players.playerName = playerName;
     }
 
     public static String getCharclass() {
@@ -208,7 +208,7 @@ public class players {
     }
 
     public static void setCharclass(String charclass) {
-        players.charclass = charclass;
+        Players.charclass = charclass;
     }
 
     public static int getHp() {
@@ -216,7 +216,7 @@ public class players {
     }
 
     public static void setHp(int hp) {
-        players.hp = hp;
+        Players.hp = hp;
     }
 
     public static int getMaxHp() {
@@ -224,7 +224,7 @@ public class players {
     }
 
     public static void setMaxHp(int maxHp) {
-        players.maxHp = maxHp;
+        Players.maxHp = maxHp;
     }
 
     public static double getArmor() {
@@ -232,7 +232,7 @@ public class players {
     }
 
     public static void setArmor(double armor) {
-        players.armor = armor;
+        Players.armor = armor;
     }
 
     public static double getMaxArmor() {
@@ -240,7 +240,7 @@ public class players {
     }
 
     public static void setMaxArmor(double maxArmor) {
-        players.maxArmor = maxArmor;
+        Players.maxArmor = maxArmor;
     }
 
     public static int getMana() {
@@ -248,7 +248,7 @@ public class players {
     }
 
     public static void setMana(int mana) {
-        players.mana = mana;
+        Players.mana = mana;
     }
 
     public static int getMaxMana() {
@@ -256,7 +256,7 @@ public class players {
     }
 
     public static void setMaxMana(int maxMana) {
-        players.maxMana = maxMana;
+        Players.maxMana = maxMana;
     }
 
     public static int getMeleeDmg() {
@@ -264,7 +264,7 @@ public class players {
     }
 
     public static void setMeleeDmg(int meleeDmg) {
-        players.meleeDmg = meleeDmg;
+        Players.meleeDmg = meleeDmg;
     }
 
     public static int getMaxMeleeDmg() {
@@ -272,7 +272,7 @@ public class players {
     }
 
     public static void setMaxMeleeDmg(int maxMeleeDmg) {
-        players.maxMeleeDmg = maxMeleeDmg;
+        Players.maxMeleeDmg = maxMeleeDmg;
     }
 
     public static int getSpeed() {
@@ -280,7 +280,7 @@ public class players {
     }
 
     public static void setSpeed(int speed) {
-        players.speed = speed;
+        Players.speed = speed;
     }
 
     public static int getMaxSpeed() {
@@ -288,7 +288,7 @@ public class players {
     }
 
     public static void setMaxSpeed(int maxSpeed) {
-        players.maxSpeed = maxSpeed;
+        Players.maxSpeed = maxSpeed;
     }
 
     public static int getLuck() {
@@ -296,7 +296,7 @@ public class players {
     }
 
     public static void setLuck(int luck) {
-        players.luck = luck;
+        Players.luck = luck;
     }
 
     public static int getMaxLuck() {
@@ -304,7 +304,7 @@ public class players {
     }
 
     public static void setMaxLuck(int maxLuck) {
-        players.maxLuck = maxLuck;
+        Players.maxLuck = maxLuck;
     }
 
     public static int getClassAbility() {
@@ -312,7 +312,7 @@ public class players {
     }
 
     public static void setClassAbility(int classAbility) {
-        players.classAbility = classAbility;
+        Players.classAbility = classAbility;
     }
 
     public static int getLevel() {
@@ -320,7 +320,7 @@ public class players {
     }
 
     public static void setLevel(int level) {
-        players.level = level;
+        Players.level = level;
     }
 
     public static int getMaxLevel() {
@@ -328,7 +328,7 @@ public class players {
     }
 
     public static void setMaxLevel(int maxLevel) {
-        players.maxLevel = maxLevel;
+        Players.maxLevel = maxLevel;
     }
 
     public static int getXp() {
@@ -336,21 +336,22 @@ public class players {
     }
 
     public static void setXp(int xp) {
-        players.xp = xp;
+        Players.xp = xp;
     }
 
 
-    public static void main() {
-
+    public static void menu() {
+        Scanner scan = new Scanner(System.in);
         String charclass;
         int num = 2;
         while (num > 1) {
-            System.out.println("              <--------------->" + "\n" +
-                    "            > Enter your Name, and press" +
-                    "               to start your quest < " + " \n" +
-                    "              <----------------> ");
+            System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.BLACK +
+                    "                  <--------------->" + "\n" +
+                    "              Enter your Name, and press " + "\n" +
+                    "                 to start your quest   " + " \n" +
+                    "              <--------------------------> ");
             playerName = scan.nextLine();
-            System.out.println("Hello," + playerName + " Choose your class: ");
+            System.out.println("Hello," + ConsoleColors.PURPLE + playerName + " Choose your class: " + ConsoleColors.RESET);
             System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
                     "So " + "\n" + "<------------------------> " +
                     ConsoleColors.RESET);
@@ -372,7 +373,7 @@ public class players {
             }
             if (charclass.charAt(0) == 'b') {
                 pathOfTheBerserker();
-            }
+            }/// give user a option to exit
             printStats();
 
 
