@@ -18,10 +18,10 @@ public class Menu {
                     "              > to start your quest < " + " \n" +
                     "           <--------------------------->                                                     " + ConsoleColors.RESET);
             String playerName = scan.nextLine();
-            System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT + "Hello," +
-                    ConsoleColors.WHITE_UNDERLINED + playerName +
-                    ConsoleColors.PURPLE_BOLD_BRIGHT + " Choose your class: " + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.GREEN_BRIGHT + "'n'--> for Nomad" + "\n" +
+            System.out.println(ConsoleColors.PURPLE_UNDERLINED + "Welcome ," +
+                    ConsoleColors.BLACK_BACKGROUND_BRIGHT + playerName +
+                    ConsoleColors.PURPLE_UNDERLINED + " Choose your class: " + ConsoleColors.RESET);
+            System.out.println(ConsoleColors.GREEN_BRIGHT + "'n'--> for Nkomad" + "\n" +
                     "So they are the people who are said to never die " + "\n" + "<------------------------> " +
                     ConsoleColors.RESET);
             System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT + "'a' for Alchemist" + "\n" +
@@ -42,6 +42,8 @@ public class Menu {
             }
             if (charclass.charAt(0) == 'b') {
                 players.pathOfTheBerserker();
+
+
             }
             players.printStats();
 
