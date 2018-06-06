@@ -25,61 +25,64 @@ public class Ranking {
         this.accepted = 0;
     }
 
-    public void add(int rank){
-        if(rank <= 60 && rank >= 0){
+    public void add(int rank) {
+
+        if(rank <= 60 && rank >= 0) {
             this.ranks.add(rank);
             this.allScores++;
 
-            if(rank >= 30){
+            if(rank >= 30) {
                 this.accepted++;
             }
         }
     }
 
-    public double percentage (){
-        if(this.allScores != 0){
+    public double percentage () {
+
+        if(this.allScores != 0) {
             return 100.0 * this.accepted/this.allScores;
         }
-        else{
+        else {
             return 0.0;
         }
     }
 
     public void printStars(int times) {
-        for(int i = times; i > 0; i --){
+
+        for(int i = times; i > 0; i --) {
             System.out.print("*");
         }
 
-        System.out.println("");
+        System.out.println(" ");
 
     }
 
     public void count () {
 
-        for(int rank : this.ranks){
+        for(int rank : this.ranks) {
 
-            if(rank >= 50){
+            if(rank >= 50) {
                 this.count5++;
             }
 
-            if(rank >= 45 && rank <= 49){
+            if(rank >= 45 && rank <= 49) {
                 this.count4++;
             }
 
 
-            if(rank >= 40 && rank <= 44){
+            if(rank >= 40 && rank <= 44) {
                 this.count3++;
             }
 
-            if(rank >= 35 && rank <= 39){
+            if(rank >= 35 && rank <= 39) {
                 this.count2++;
             }
 
-            if(rank >= 30 && rank <= 34){
+            if(rank >= 30 && rank <= 34) {
                 this.count1++;
             }
 
-            if(rank >= 0 && rank <= 29){
+            if(rank >= 0 && rank <= 29) {
                 this.count0++;
             }
 
