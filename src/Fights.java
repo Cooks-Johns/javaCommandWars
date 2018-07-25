@@ -52,13 +52,13 @@
 //                System.out.println("Press 'f' for fireball\nPress 'h' to heal\n");
 //                spellAction = scan.nextLine();
 //                if(spellAction.charAt(0) == 'f'){
-//                    if(dice.roll10() > 2){
+//                    if(tools.dice.roll10() > 2){
 //                        Players.mana = Players.mana - 10;
 //                        if(Players.mana <0){
 //                            System.out.println("You don't have enough mana...");
 //                            Players.mana = Players.mana + 10;
 //                        }else{
-//                            int k = dice.roll10(); //randomly hurts 1-10
+//                            int k = tools.dice.roll10(); //randomly hurts 1-10
 //                            System.out.println("You hit for " + k + " damage!");
 //                            Enemy.Hp  = Enemy.Hp - k;
 //                            if(Enemy.Hp  <= 0){
@@ -95,7 +95,7 @@
 //                        System.out.println("You don't have enough mana...");
 //                        Players.mana = Players.mana + 8;
 //                    }else{
-//                        int x = dice.roll10(); //randomly heals 1-8
+//                        int x = tools.dice.roll10(); //randomly heals 1-8
 //                        System.out.println("You heal your wounds...");
 //                        System.out.println("+ " + x + " hp");
 //                        Players.hp = Players.hp + x;
