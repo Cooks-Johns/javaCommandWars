@@ -1,21 +1,21 @@
 
-import java.util.*;
+import java.util.Scanner;
+
+
 
 public class ThizzBuzz {
 
 
-
-
-
-
+        static Scanner scan = new Scanner(System.in);
 
 
 
     public static void main(String[] args) {
 
-        int n = 100;
-
-        for(int i = 1; i < n; i++) {
+        int n = 1;
+        for(int i = 1; scan.hasNext(); i++){
+            System.out.println(i + " " + scan.nextLine());
+//        for(int i = 1; i < n; i++) {
             // number divisible by 5, print 'Buzz'
             // in place of the number
 
@@ -37,4 +37,6 @@ public class ThizzBuzz {
                 System.out.println(i+" ");
         }
     }
+
+
 }
