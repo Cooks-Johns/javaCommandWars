@@ -32,10 +32,10 @@ public class P1 {
             return Math.max(res, curr_len);
         }
 
-    public static void main(String[] args) {
-
-        System.out.println(LongestWordLength("It is unfair to suggest the school was responsible"));
-    }
+//    public static void main(String[] args) {
+//
+//        System.out.println(LongestWordLength("It is unfair to suggest the school was responsible"));
+//    }
 
 
 
