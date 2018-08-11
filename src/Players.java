@@ -34,48 +34,58 @@ public class Players {
 
 //--      PC  ADD A FEW MORE CLASSESS
 
+    public static void main(String[] args) {
 
-    public static void menu() {
-        Scanner scan = new Scanner(System.in);
-        String charclass;
-        int num = 2;
-        while (num > 1) {
-            System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.BLACK +
-                    "                  <--------------->" + "\n" +
-                    "              Enter your Name, and press " + "\n" +
-                    "                 to start your quest   " + " \n" +
-                    "              <--------------------------> ");
-            playerName = scan.nextLine();
-            System.out.println("Hello," + ConsoleColors.PURPLE + playerName + " Choose your class: " + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
-                    "So " + "\n" + "<------------------------> " +
-                    ConsoleColors.RESET);
-            System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT + "'a' for Alchemist" + "\n" +
-                    "The elixer is the the real gold,\n" +
-                    "but gold is gold." + "\n" + "<------------------------> " +
-                    ConsoleColors.RESET);
-            System.out.println(ConsoleColors.RED_BOLD + "'b' for Berserker" + "\n" +
-                    "So this might be a good time to run....\n " +
-                    "but if I it's already to late." + "\n" + "<------------------------> " +
-                    ConsoleColors.RESET);
-            charclass = scan.nextLine().toLowerCase();
 
-            if (charclass.charAt(0) == 'n') {
-                Stats.pathOfTheNomad();
+            Scanner scan = new Scanner(System.in);
+            String charclass;
+            int num = 2;
+            while (num > 1) {
+                System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.BLACK +
+                        "                  <--------------->" + "\n" +
+                        "              Enter your Name, and press " + "\n" +
+                        "                 return to start your quest   " + " \n" +
+                        "              <--------------------------> ");
+                playerName = scan.nextLine();
+
+
+                System.out.println("Hello," + ConsoleColors.PURPLE + playerName + " Choose your class: " + ConsoleColors.RESET);
+
+                System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
+                        "So " + "\n" + "<------------------------> " +
+                        ConsoleColors.RESET);
+
+
+                System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT + "'a' for Alchemist" + "\n" +
+                        "The elixer is the the real gold,\n" +
+                        "but gold is gold." + "\n" + "<------------------------> " +
+                        ConsoleColors.RESET);
+
+
+                System.out.println(ConsoleColors.RED_BOLD + "'b' for Berserker" + "\n" +
+                        "So this might be a good time to run....\n " +
+                        "but if I it's already to late." + "\n" + "<------------------------> " +
+                        ConsoleColors.RESET);
+
+
+                charclass = scan.nextLine().toLowerCase();
+
+                if (charclass.charAt(0) == 'n') {
+                    Stats.pathOfTheNomad();
+                }
+                if (charclass.charAt(0) == 'a') {
+                    Stats.pathOfTheAlchemist();
+                }
+                if (charclass.charAt(0) == 'b') {
+                    Stats.pathOfTheBerserker();
+                }/// give user a option to exit
+                printStats();
+
+
             }
-            if (charclass.charAt(0) == 'a') {
-                Stats.pathOfTheAlchemist();
-            }
-            if (charclass.charAt(0) == 'b') {
-                Stats.pathOfTheBerserker();
-            }/// give user a option to exit
-            printStats();
 
-
-        }
 
 
     }
-
 
 }

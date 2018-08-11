@@ -58,7 +58,8 @@ public class JavaStudying {
 
                 System.out.println("thank whats your name");
                 String userInput1 = sc.next();
-                System.out.format("Hello %s so how are you doing\n", userInput1);
+                System.out.format("Hello %s so how do you want to move?y\n", userInput1);
+                String userInput2 = sc.next();
 
             } else if (confirmation){
                 System.out.println("So how deep is the who ");

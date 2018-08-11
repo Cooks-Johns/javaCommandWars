@@ -1,15 +1,27 @@
-
+package tools;
 //working a HackerRank Problem that I think would be cool to use in my game
 
 
 import java.text.NumberFormat;
+import java.util.Currency;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class CurrencyFormatter {
 
 
-
+//    static public void displayCurrency( Locale currentLocale) {
+//
+//        Double currencyAmount = new Double(9876543.21);
+//        Currency currentCurrency = Currency.getInstance(currentLocale);
+//        NumberFormat currencyFormatter =
+//                NumberFormat.getCurrencyInstance(currentLocale);
+//
+//        System.out.println(
+//                currentLocale.getDisplayName() + ", " +
+//                        currentCurrency.getDisplayName() + ": " +
+//                        currencyFormatter.format(currencyAmount));
+//    }
 
     public static void main(String[] args) {
 
@@ -38,8 +50,9 @@ public class CurrencyFormatter {
         NumberFormat nicaragua = NumberFormat.getNumberInstance(NICARAGUA);
 
 
-//        Now its time to print these things out
 
+
+//        Now its time to print these things out
 
         System.out.println("US: " + us.format(payment));
         System.out.println("France: " + france.format(payment));

@@ -1,3 +1,4 @@
+package test;
 
 import java.util.Scanner;
 
@@ -13,9 +14,9 @@ public class ThizzBuzz {
     public static void main(String[] args) {
 
         int n = 1;
-        for(int i = 1; scan.hasNext(); i++){
-            System.out.println(i + " " + scan.nextLine());
-//        for(int i = 1; i < n; i++) {
+//        for(int i = 1; scan.hasNext(); i++){
+//            System.out.println(i + " " + scan.nextLine());
+        for(int i = 1; i < n; i++) {
             // number divisible by 5, print 'Buzz'
             // in place of the number
 
@@ -31,11 +32,16 @@ public class ThizzBuzz {
                 // both 3 & 5), print 'FizzBuzz' in
                 // place of the number
             else if (i % (3 * 5)== 0)
-                System.out.println("ThizzBuzz"+" ");
+                System.out.println("test.ThizzBuzz"+" ");
 
             else  // print the numbers
                 System.out.println(i+" ");
         }
+    }
+
+    public static void make(){
+
+
     }
 
 
