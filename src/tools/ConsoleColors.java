@@ -1,3 +1,5 @@
+package tools;
+
 public class ConsoleColors {
 
 
@@ -78,6 +80,11 @@ public class ConsoleColors {
     public static void main(String[] args) {
         System.out.println("ljdf");
         System.out.println(ConsoleColors.BLUE_BRIGHT + "make it work");
+        System.out.println(ConsoleColors.BLACK_BOLD + " RED COLORED" + ConsoleColors.RESET + " NORMAL");
+        System.out.println(ConsoleColors.PURPLE_UNDERLINED +"cool");
+        System.out.println( " NORMAL");
+        System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET + " NORMAL");
+        System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET + " NORMAL");
         System.out.println(ConsoleColors.RED + "RED COLORED" + ConsoleColors.RESET + " NORMAL");
 
     }

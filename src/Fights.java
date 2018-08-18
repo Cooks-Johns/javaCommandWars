@@ -22,21 +22,21 @@
 //            if(action.charAt(0) == 'a') {
 //                fighting = driver.attack();
 //                if(fighting == false) {
-//                    switch(players.level) {
+//                    switch(Players.level) {
 //                        case 1:
-//                            players.xp =  players.xp + 4;
+//                            Players.xp =  Players.xp + 4;
 //                            break;
 //                        case 2:
-//                            players.xp  =  players.xp + 6;
+//                            Players.xp  =  Players.xp + 6;
 //                            break;
 //                        case 3:
-//                            players.xp =  players.xp + 9;
+//                            Players.xp =  Players.xp + 9;
 //                            break;
 //                        case 4:
-//                            players.xp =  players.xp + 12;
+//                            Players.xp =  Players.xp + 12;
 //                            break;
 //                    }
-//                    System.out.println("You have gained :" + players.xp + " xp");
+//                    System.out.println("You have gained :" + Players.xp + " xp");
 //                    driver.checkLevelUp();
 //                    return;
 //                }
@@ -52,32 +52,32 @@
 //                System.out.println("Press 'f' for fireball\nPress 'h' to heal\n");
 //                spellAction = scan.nextLine();
 //                if(spellAction.charAt(0) == 'f'){
-//                    if(dice.roll10() > 2){
-//                        players.mana = players.mana - 10;
-//                        if(players.mana <0){
+//                    if(tools.dice.roll10() > 2){
+//                        Players.mana = Players.mana - 10;
+//                        if(Players.mana <0){
 //                            System.out.println("You don't have enough mana...");
-//                            players.mana = players.mana + 10;
+//                            Players.mana = Players.mana + 10;
 //                        }else{
-//                            int k = dice.roll10(); //randomly hurts 1-10
+//                            int k = tools.dice.roll10(); //randomly hurts 1-10
 //                            System.out.println("You hit for " + k + " damage!");
 //                            Enemy.Hp  = Enemy.Hp - k;
 //                            if(Enemy.Hp  <= 0){
 //                                System.out.println("You Won!");
 //                                switch("are YOu going to quit"){
 //                                    case 1:
-//                                        players.xp =  players.xp + 4;
+//                                        Players.xp =  Players.xp + 4;
 //                                        break;
 //                                    case 2:
-//                                        players.xp =  players.xp + 6;
+//                                        Players.xp =  Players.xp + 6;
 //                                        break;
 //                                    case 3:
-//                                        players.xp =  players.xp + 9;
+//                                        Players.xp =  Players.xp + 9;
 //                                        break;
 //                                    case 4:
-//                                        players.xp =  players.xp + 12;
+//                                        Players.xp =  Players.xp + 12;
 //                                        break;
 //                                }
-//                                System.out.println("You earned :" + players.xp + " xp");
+//                                System.out.println("You earned :" + Players.xp + " xp");
 //                                driver.checkLevelUp();
 //                                return;
 //                            }
@@ -90,15 +90,15 @@
 //                    }
 //                }else
 //                if(spellAction.charAt(0) == 'h'){
-//                    players.mana = players.mana - 8;
-//                    if(players.mana <0){
+//                    Players.mana = Players.mana - 8;
+//                    if(Players.mana <0){
 //                        System.out.println("You don't have enough mana...");
-//                        players.mana = players.mana + 8;
+//                        Players.mana = Players.mana + 8;
 //                    }else{
-//                        int x = dice.roll10(); //randomly heals 1-8
+//                        int x = tools.dice.roll10(); //randomly heals 1-8
 //                        System.out.println("You heal your wounds...");
 //                        System.out.println("+ " + x + " hp");
-//                        players.hp = players.hp + x;
+//                        Players.hp = Players.hp + x;
 //                        if(driver.playerhp>driver.maxhp){
 //                            driver.playerhp = driver.maxhp;
 //                        }
