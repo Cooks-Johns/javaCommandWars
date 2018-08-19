@@ -12,7 +12,7 @@ public class FactorFriends {
         int num1 = factor.nextInt();
         int flex = factor.nextInt();
 
-        for(int i = num1; i; i--){
+        for(int i = num1; i<0; i--){
             flex = flex * i;
 
         }
