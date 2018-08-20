@@ -15,17 +15,12 @@ public class FactorFriends {
         System.out.println("Enter your number so I can find its friends!");
         Number = factor.nextInt();
 
-
         System.out.println("Here are your factors");
-
         for(i = 1; i <= Number; i++) {
             if(Number%i == 0) {
                 System.out.format("  %d ", i);
+
             }
         }
-
-
-
-
     }
 }

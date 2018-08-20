@@ -1,15 +1,14 @@
 package rpg_test;
 
 
-import java.util.Scanner;
 
 public abstract class Toons {
 
 
-public Scanner scan = new Scanner(System.in);
 
     public Toons(Object menu,
-                   String playerName, String charclass,
+                   String playerName,
+                   String charclass,
                    int hp, int maxHp,
                    double armor, double maxArmor,
                    int mana, int maxMana,
