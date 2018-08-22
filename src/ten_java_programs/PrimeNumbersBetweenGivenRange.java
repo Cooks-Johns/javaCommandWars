@@ -14,7 +14,8 @@ public class PrimeNumbersBetweenGivenRange {
                            "  '---------------------------------------------------'\n" +
                            "      ^      (\\_/)  \n" +
                            "      '----- (O.o)   \n" +
-                           "             (> <)     ");
+                           "             (> <)     "
+        );
         String user = input.next();
 
         System.out.println(" ");
@@ -30,7 +31,8 @@ public class PrimeNumbersBetweenGivenRange {
                            "  '------------------------------'\n" +
                            "      ^      (\\_/)  \n" +
                            "      '----- (O.o)   \n" +
-                           "             (> <)     ");
+                           "             (> <)     "
+        );
         int primeOne = input.nextInt();
 
 
@@ -39,7 +41,8 @@ public class PrimeNumbersBetweenGivenRange {
                            "  '---------------------------------'\n" +
                            "      ^      (\\_/)  \n" +
                            "      '----- (O.o)   \n" +
-                           "             (> <)     ");
+                           "             (> <)     "
+        );
         int primeTwo = input.nextInt();
 
 
@@ -61,9 +64,14 @@ public class PrimeNumbersBetweenGivenRange {
         }
 
 
-        System.out.println("Enter a number from which you want to prime: ");
+        System.out.println("Prime numbers between "
+                + primeOne + " and " + primeTwo + " are "
+                );
+        for(int newInt = 0; newInt < prime.size(); newInt++) {
+            System.out.println(prime.get(newInt).toString() + ", ");
 
-//        int p3 = input.nextInt();
+        }
+
 
     }
 }
