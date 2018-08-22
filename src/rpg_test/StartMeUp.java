@@ -37,7 +37,7 @@ public class StartMeUp {
             charclass = scan.nextLine().toLowerCase();
 
             if (charclass.charAt(0) == 'n') {
-                Toons.pathOfTheNomad();
+//                Toons.pathOfTheNomad();
             }
             if (charclass.charAt(0) == 'a') {
                 pathOfTheAlchemist();
