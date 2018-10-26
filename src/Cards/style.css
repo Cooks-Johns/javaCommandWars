@@ -1,0 +1,90 @@
+
+
+
+
+/*        Personal Styles I'm always up for ideas       */
+
+
+#mainHeader {
+
+
+}
+
+#Dealer {
+
+}
+
+#FirstPlayer {
+
+}
+
+/*html {*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/**, *:before, *:after {*/
+    /*box-sizing: inherit*/
+/*}*/
+
+
+
+/*===================================================*/
+
+
+
+
+
+/*              THIS IS ONLY A TEST                 */
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    boxing-sizing: inherit;
+}
+
+div {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    mardin: 10px;
+    box-shadow: 1px 1px 2px #4444;
+}
+
+div header {
+    content: "psuedo 150px";
+    dizplay: black;
+    width: 150px;
+    backgroud: #eee;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.module {
+    content: "pseudo 150";
+    display: black;
+    width: 150px;
+    padding: 10px;
+}
+
+
+
+
+
+/*===================================================*/
+
+
+
+
+
+/*                       BOOTsTRAP                    */
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
