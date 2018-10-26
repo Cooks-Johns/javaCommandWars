@@ -49,7 +49,7 @@ html {
 div {
     width: 300px;
     height: 100px;
-    padding: 10px;
+    padding: 100px;
 
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -62,7 +62,7 @@ div header {
     dizplay: black;
     width: 150px;
     backgroud: #eee;
-    padding: 10px;
+    padding: 100px;
     border-radius: 4px;
 }
 
@@ -70,7 +70,7 @@ div header {
     content: "pseudo 150";
     display: black;
     width: 150px;
-    padding: 10px;
+    padding: 100px;
 }
 
 
