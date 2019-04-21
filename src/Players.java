@@ -42,29 +42,37 @@ public class Players {
             int num = 2;
             while (num > 1) {
                 System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.BLACK +
-                        "                  <--------------->" + "\n" +
+                        "                  <---------------> " + "\n" +
                         "              Enter your Name, and press " + "\n" +
                         "                 return to start your quest   " + " \n" +
-                        "              <--------------------------> ");
+                        "              <--------------------------> " + ConsoleColors.RESET );
+
+
                 playerName = scan.nextLine();
 
 
-                System.out.println("Hello," + ConsoleColors.PURPLE + playerName + " Choose your class: " + ConsoleColors.RESET);
+                System.out.println("Hello," + ConsoleColors.PURPLE + playerName + ConsoleColors.RESET +
+                        " Choose your class: ");
 
-                System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
-                        "So " + "\n" + "<------------------------> " +
+                System.out.println(ConsoleColors.WHITE_BOLD + "------------------------> "  +
+                        "                           'n' is for Nomad" + "\n" +
+                        "                           I might not be fast but I'll keep it moving" + "\n" +
+                        "                           <------------------------> " +
                         ConsoleColors.RESET);
 
 
-                System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT + "'a' for Alchemist" + "\n" +
-                        "The elixer is the the real gold,\n" +
-                        "but gold is gold." + "\n" + "<------------------------> " +
+                System.out.println(ConsoleColors.CYAN_BOLD_BRIGHT +
+                        "------------------------> " +
+                        "'a' for Alchemist" + "\n" +
+                        "                           The elixer is the the real gold,\n" +
+                        "                           but gold is gold." + "\n" +
                         ConsoleColors.RESET);
 
 
-                System.out.println(ConsoleColors.RED_BOLD + "'b' for Berserker" + "\n" +
-                        "So this might be a good time to run....\n " +
-                        "but if I it's already to late." + "\n" + "<------------------------> " +
+                System.out.println(ConsoleColors.RED_BOLD + "------------------------> " + "'b' for Berserker" + "\n" +
+                        "                           So this might be a good time to run....\n " +
+                        "                           but if I see you it's already to late." + "\n" +
+                        "                           <------------------------> " +
                         ConsoleColors.RESET);
 
 
@@ -83,6 +91,7 @@ public class Players {
 
 
             }
+
 
 
 
