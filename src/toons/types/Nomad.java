@@ -9,6 +9,7 @@ public class Nomad extends Heros {
 
 
 
+
     public Nomad(String baseBattleCry,
                  int baseArmor,
                  int baseSpeed,
