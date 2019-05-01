@@ -15,15 +15,14 @@ public class Nomad extends Heros {
                  int baseSpeed,
                  int baseAttack,
                  int baseLevel) {
-     super(baseBattleCry, baseArmor, baseSpeed, baseAttack, baseLevel);
+     super(baseArmor, baseSpeed, baseAttack, baseLevel);
      battleCry = baseBattleCry;
     }
 
     public void setBattleCry(String cry) {
 
-        battleCry = ConsoleColors.WHITE_BOLD +
-
-                "------------------------> "  +
+        battleCry = ConsoleColors.WHITE_BOLD + "------------------------> "  +
+                "                           'n' is for Nomad" + "\n" +
                 "                           I might not be fast but I'll keep it moving" + "\n" +
                 "                           <------------------------> " +
                 ConsoleColors.RESET;

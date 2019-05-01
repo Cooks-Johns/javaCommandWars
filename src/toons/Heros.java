@@ -27,8 +27,8 @@ public class Heros {
 
 
 
-    public void setArmor(int armorSpawn){
-      armor = armorSpawn;
+    public void setArmor (int makeArmor){
+      armor = makeArmor;
     }
 
 
