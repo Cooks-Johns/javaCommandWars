@@ -7,6 +7,7 @@ public class Alchmist extends Heros {
 
 
     public String battleCry;
+    public int special1;
 
     public Alchmist(String baseBattleCry,
                     int baseArmor,
