@@ -6,9 +6,9 @@ public class Stats {
 
     public static void pathOfTheNomad() {
         Toons.charclass = "Nomad";
-        Toons.hp = 20;
+        Toons.hp = 15;
 
-        Toons.armor = 20;
+        Toons.armor = 10;
 
         Toons.meleeDmg = 4;
 
@@ -21,11 +21,7 @@ public class Stats {
 
         Toons.xp = 0;
         Toons.level = 1;
-        Toons.battleCry = ConsoleColors.RED_BOLD + "------------------------> " + "'b' for Berserker" + "\n" +
-                    "                           So this might be a good time to run....\n " +
-                    "                           but if I see you it's already to late." + "\n" +
-                    "                           <------------------------> " +
-                    ConsoleColors.RESET;
+
 
     }
 

@@ -3,14 +3,7 @@ package toonMain.types;
 import tools.ConsoleColors;
 import toonMain.Heros;
 
-public class Berserker extends Heros {
-
-
-
-
-    public Berserker(int baseArmor, int baseSpeed, int baseAttack, int baseLevel) {
-        super(baseArmor, baseSpeed, baseAttack, baseLevel);
-    }
+class Berserker extends Heros {
 
 
     public String battleCry() {

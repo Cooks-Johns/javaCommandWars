@@ -6,21 +6,9 @@ import toonMain.Heros;
 
 class Nomad extends Heros {
 
-    public String battleCry;
 
 
-
-
-    public Nomad(String baseBattleCry,
-                 int baseArmor,
-                 int baseSpeed,
-                 int baseAttack,
-                 int baseLevel) {
-     super(baseArmor, baseSpeed, baseAttack, baseLevel);
-     battleCry = baseBattleCry;
-    }
-
-    public String baseBattleCry() {
+    public String battleCry() {
 
         return ConsoleColors.WHITE_BOLD + "------------------------> "  +
                 "                           'n' is for Nomad" + "\n" +
@@ -30,13 +18,7 @@ class Nomad extends Heros {
     }
 
 
-    @Override
-    public String battleCry() {
-        return null;
-    }
 
-    public static void main(String[] args) {
 
-    }
 
 }
