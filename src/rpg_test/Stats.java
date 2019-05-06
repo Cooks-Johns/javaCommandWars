@@ -21,6 +21,12 @@ public class Stats {
 
         Toons.xp = 0;
         Toons.level = 1;
+        Toons.battleCry = ConsoleColors.RED_BOLD + "------------------------> " + "'b' for Berserker" + "\n" +
+                    "                           So this might be a good time to run....\n " +
+                    "                           but if I see you it's already to late." + "\n" +
+                    "                           <------------------------> " +
+                    ConsoleColors.RESET;
+
     }
 
     public static void pathOfTheAlchemist() {

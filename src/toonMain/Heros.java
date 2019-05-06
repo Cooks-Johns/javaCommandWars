@@ -1,6 +1,6 @@
-package toons;
+package toonMain;
 
-public class Heros {
+public abstract class Heros {
 
 // ----------->       fields
 
@@ -22,27 +22,26 @@ public class Heros {
 
   }
 
+  public int getArmor() {
+      return armor;
+  }
+
+  public int setArmor(){
+      return armor;
+  }
+
+  public int getSpeed(){
+      return speed;
+  }
+
+  public int setSpeed(){
+      return speed;
+  }
 
 // ----------->      METHODS
 
 
 
-    public void setArmor (int makeArmor){
-      armor = makeArmor;
-    }
-
-
-    public void setSpeed(int speedSpawn) {
-      armor = speedSpawn;
-    }
-
-
-    public void setAttack(int toonAttack) {
-      attack = toonAttack;
-    }
-
-
-    public void setLevel(int levelUp) { level += levelUp;}
 
 
 }

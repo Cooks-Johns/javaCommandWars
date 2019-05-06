@@ -21,6 +21,7 @@ public abstract class Toons {
     public static int classAbility;
     public static int xp;
     public static int level;
+    public static String battleCry;
 
 
     public Toons(  String playerName,
@@ -29,7 +30,8 @@ public abstract class Toons {
                    int mana, int meleeDmg,
                    int speed, int luck,
                    int classAbility, int xp,
-                   int level) {
+                   int level,
+                   String battleCry) {
 
         this.playerName = playerName;
         this.charclass = charclass;
@@ -42,6 +44,7 @@ public abstract class Toons {
         this.classAbility = classAbility;
         this.level = level;
         this.xp = xp;
+        this.battleCry = battleCry;
     }
 
 

@@ -1,4 +1,4 @@
-package toons.mapsAndNav;
+package toonMain.mapsAndNav;
 
 public class MainNav {
 

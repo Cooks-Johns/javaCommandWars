@@ -1,6 +1,8 @@
 package rpg_test;
 
 import tools.ConsoleColors;
+import toonMain.Heros;
+import toonMain.types.Berserker;
 
 import java.util.Scanner;
 
@@ -8,15 +10,19 @@ import static rpg_test.Stats.pathOfTheAlchemist;
 import static rpg_test.Stats.pathOfTheBerserker;
 import static rpg_test.Toons.playerName;
 
+
 public class StartMeUp {
 
 
     private static Scanner scan;
+    Heros b = new Berserker();
 
     public static void main(String[] args) {
         String charclass;
         int num = 2;
         while (num > 1) {
+
+            System.out.println();
             System.out.println("              <--------------->" + "\n" +
                     "            > Enter your Name, and press" +
                     "               to start your quest < " + " \n" +

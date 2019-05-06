@@ -41,6 +41,7 @@ public class Players {
             String charclass;
             int num = 2;
             while (num > 1) {
+
                 System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.BLACK +
                         "                  <---------------> " + "\n" +
                         "              Enter your Name, and press " + "\n" +

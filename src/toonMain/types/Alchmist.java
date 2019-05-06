@@ -1,13 +1,15 @@
-package toons.types;
+package toonMain.types;
+
 
 import tools.ConsoleColors;
-import toons.Heros;
+import toonMain.Heros;
 
 public class Alchmist extends Heros {
 
 
     public String battleCry;
     public int special1;
+    private int special2;
 
     public Alchmist(String baseBattleCry,
                     int baseArmor,
@@ -17,6 +19,7 @@ public class Alchmist extends Heros {
         super(baseArmor, baseSpeed, baseAttack, baseLevel);
         battleCry = baseBattleCry;
     }
+
 
     public void setBattleCry(String cry) {
         battleCry = ConsoleColors.CYAN_BOLD_BRIGHT +

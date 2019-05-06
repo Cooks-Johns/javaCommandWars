@@ -1,9 +1,10 @@
-package toons.types;
+package toonMain.types;
 
 import tools.ConsoleColors;
-import toons.Heros;
+import toonMain.Heros;
 
-public class Nomad extends Heros {
+
+class Nomad extends Heros {
 
     public String battleCry;
 
@@ -19,12 +20,14 @@ public class Nomad extends Heros {
      battleCry = baseBattleCry;
     }
 
-    public void setBattleCry(String cry) {
+    public String baseBattleCry() {
 
-        battleCry = ConsoleColors.WHITE_BOLD + "------------------------> "  +
+        return ConsoleColors.WHITE_BOLD + "------------------------> "  +
                 "                           'n' is for Nomad" + "\n" +
                 "                           I might not be fast but I'll keep it moving" + "\n" +
                 "                           <------------------------> " +
                 ConsoleColors.RESET;
     }
+
+
 }

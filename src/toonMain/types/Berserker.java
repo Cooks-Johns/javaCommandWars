@@ -1,7 +1,7 @@
-package toons.types;
+package toonMain.types;
 
 import tools.ConsoleColors;
-import toons.Heros;
+import toonMain.Heros;
 
 public class Berserker extends Heros {
 
@@ -17,8 +17,9 @@ public class Berserker extends Heros {
         battleCry = baseBattleCry;
     }
 
-    public void setBattleCry(String cry) {
-        battleCry = ConsoleColors.RED_BOLD + "------------------------> " + "'b' for Berserker" + "\n" +
+
+
+    public = ConsoleColors.RED_BOLD + "------------------------> " + "'b' for Berserker" + "\n" +
                 "                           So this might be a good time to run....\n " +
                 "                           but if I see you it's already to late." + "\n" +
                 "                           <------------------------> " +
