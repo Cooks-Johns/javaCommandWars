@@ -1,21 +1,19 @@
 package rpg_test;
 
 import tools.ConsoleColors;
-import toonMain.Heros;
-import toonMain.types.Berserker;
 
 import java.util.Scanner;
 
-import static rpg_test.Stats.pathOfTheAlchemist;
-import static rpg_test.Stats.pathOfTheBerserker;
+import static rpg_test.Stats.*;
 import static rpg_test.Toons.playerName;
+
+//import static rpg_test.Stats.pathOfTheBerserker;
 
 
 public class StartMeUp {
 
 
     private static Scanner scan;
-    Heros b = new Berserker();
 
     public static void main(String[] args) {
         String charclass;
@@ -43,7 +41,7 @@ public class StartMeUp {
             charclass = scan.nextLine().toLowerCase();
 
             if (charclass.charAt(0) == 'n') {
-//                Toons.pathOfTheNomad();
+                pathOfTheNomad();
             }
             if (charclass.charAt(0) == 'a') {
                 pathOfTheAlchemist();
@@ -51,6 +49,7 @@ public class StartMeUp {
             if (charclass.charAt(0) == 'b') {
                 pathOfTheBerserker();
             }
+
 //            Players.printStats();
 
 

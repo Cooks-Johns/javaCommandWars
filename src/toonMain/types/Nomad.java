@@ -30,4 +30,13 @@ class Nomad extends Heros {
     }
 
 
+    @Override
+    public String battleCry() {
+        return null;
+    }
+
+    public static void main(String[] args) {
+
+    }
+
 }

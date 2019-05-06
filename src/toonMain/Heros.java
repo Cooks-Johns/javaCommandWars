@@ -4,6 +4,8 @@ public abstract class Heros {
 
 // ----------->       fields
 
+    public abstract String battleCry();
+
     public int armor;
     public int speed;
     public int attack;
@@ -25,7 +27,6 @@ public abstract class Heros {
   public int getArmor() {
       return armor;
   }
-
   public int setArmor(){
       return armor;
   }
@@ -33,11 +34,15 @@ public abstract class Heros {
   public int getSpeed(){
       return speed;
   }
-
   public int setSpeed(){
       return speed;
   }
 
+  public int getAttack() { return attack; }
+  public int setAttack() { return attack; }
+
+  public int getlevel() { return level; }
+  public int setLevel() { return level; }
 // ----------->      METHODS
 
 
