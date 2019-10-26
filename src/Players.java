@@ -1,3 +1,8 @@
+
+
+// --------------------------->          Main Menu Page            <------------------------------
+
+
 import tools.ConsoleColors;
 import rpg_test.Stats;
 
@@ -41,15 +46,15 @@ public class Players {
             String charclass;
             int num = 2;
             while (num > 1) {
-                System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.BLACK +
-                        "                  <--------------->" + "\n" +
-                        "              Enter your Name, and press " + "\n" +
-                        "                 return to start your quest   " + " \n" +
+                System.out.println(ConsoleColors.WHITE_BACKGROUND_BRIGHT + ConsoleColors.RED_BOLD +
+                        "              <-------------------------->" + "\n" +
+                        "             | Enter your Name, and press |" + "\n" +
+                        "             | return to start your quest |  " + " \n" +
                         "              <--------------------------> ");
                 playerName = scan.nextLine();
 
 
-                System.out.println("Hello," + ConsoleColors.PURPLE + playerName + " Choose your class: " + ConsoleColors.RESET);
+                System.out.println(ConsoleColors.PURPLE + "Hello," + playerName + " Choose your class: " + ConsoleColors.RESET);
 
                 System.out.println(ConsoleColors.WHITE_BOLD + "'n'--> for Nomad" + "\n" +
                         "So " + "\n" + "<------------------------> " +
@@ -83,6 +88,8 @@ public class Players {
 
 
             }
+
+            
 
 
 

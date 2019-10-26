@@ -2,9 +2,15 @@ package rpg_test;
 
 import tools.ConsoleColors;
 
-public class Stats {
+public class Stats extends Toons {
 
-    public static void pathOfTheNomad() {
+    public Stats(String charclass, int hp, double armor, int mana, int meleeDmg, int speed, int luck,
+			int classAbility, int xp, int level) {
+		super(charclass, hp, armor, mana, meleeDmg, speed, luck, classAbility, xp, level);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void pathOfTheNomad() {
         Toons.charclass = "Nomad";
         Toons.hp = 20;
 

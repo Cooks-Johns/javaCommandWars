@@ -11,17 +11,20 @@ public class EvenOdd {
                            " Whats your Anounted mage name");
         String mage = bill.nextLine();
 
-        System.out.println("Welcome" + mage);
+        System.out.println("Welcome " + mage + "!");
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter a number which you want to check \n" +
+        System.out.println("My name is Bill. \n" +
+            " Please Enter a number which you want to check \n" +
                            " whether that it is odd or even! ");
         int n = in.nextInt();
 
         if(n%2 == 0){
-            System.out.println(n+ " is an even number.");
+            System.out.println("Great news "+ 
+                mage + " " + n + " is an even number.");
         }else {
-            System.out.println(n+ " is an odd number.");
+            System.out.println("Sorry to break it to you " + 
+                mage + " "  + n + " is just another odd number.");
             new EvenOdd();
         }
 
