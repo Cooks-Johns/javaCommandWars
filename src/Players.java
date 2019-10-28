@@ -8,9 +8,9 @@ import rpg_test.Stats;
 
 import java.util.Scanner;
 
-import static rpg_test.Toons.charclass;
-import static rpg_test.Toons.hp;
-import static rpg_test.Toons.meleeDmg;
+import static rpg_test.Toons.*;
+// import static rpg_test.Toons.hp;
+// import static rpg_test.Toons.meleeDmg;
 import static test.driver.mana;
 import static test.driver.playerName;
 import static test.driver.xp;
