@@ -1,0 +1,22 @@
+http://pixelcog.github.io/parallax.js/
+
+https://github.com/cyntss/Parallax-img-scroll
+
+mysql -h [host] -u [] -p[password]
+
+
+WPhw@Ngnm26g@2v
+
+
+Levels of diffuculty 
+	Easy 
+		10 mins max
+
+	chef
+		30 mins max
+
+	proChef
+		1 hour plus
+
+
+
